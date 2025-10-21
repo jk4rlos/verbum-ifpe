@@ -27,6 +27,11 @@
     <section id="midias">
         @include('site.components.parish.media')
     </section>
+
+    <!-- Offer Section -->
+    <section id="ofertas">
+        @include('site.components.parish.offer')
+    </section>
     
     <!-- Contact Section -->
     <section id="contato">
