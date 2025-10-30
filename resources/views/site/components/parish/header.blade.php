@@ -12,8 +12,9 @@
                 <a href="{{ route('welcome') }}" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Home</a>
                 <a href="#" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Sobre Nós</a>
                 <a href="#" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Horários</a>
-                <a href="#" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Mídias</a>
-                <a href="#" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Ofertas</a>
+                <a href="#midias" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Mídias</a>
+                <a href="#liturgia" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Liturgia</a>
+                <a href="#ofertas" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Ofertas</a>
                 <a href="#" class="text-gray-900 dark:text-white hover:text-[#D94052] px-3 py-2 rounded-md text-sm font-medium">Contato</a>
             </div>
 
@@ -38,9 +39,10 @@
 <div class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md" id="mobile-menu">
     <div class="px-4 pt-4 pb-3 space-y-2">
         <a href="{{ route('welcome') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Home</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Soluções</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Preços</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Contato</a>
+        <a href="#horarios" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Horários</a>
+        <a href="#midias" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Mídias</a>
+        <a href="#liturgia" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Liturgia</a>
+        <a href="#ofertas" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Ofertas</a>
         <hr class="border-gray-200 dark:border-gray-700">
         <a href="#" class="block px-3 py-2 text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Entrar</a>
         <a href="#" class="block w-full px-3 py-2 text-base font-medium text-white bg-[#D94052] hover:bg-[#EE7E4C] rounded-md text-center">Começar Agora</a>

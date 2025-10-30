@@ -13,10 +13,11 @@
             <div class="relative z-10">
                 <h4 class="text-lg font-semibold text-white mb-4">Links Rápidos</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-white/90 hover:text-white/70">Home</a></li>
-                    <li><a href="#" class="text-white/90 hover:text-white/70">Soluções</a></li>
-                    <li><a href="#" class="text-white/90 hover:text-white/70">Preços</a></li>
-                    <li><a href="#" class="text-white/90 hover:text-white/70">Contato</a></li>
+                    <li><a href="{{ route('welcome') }}" class="text-white/90 hover:text-white/70">Home</a></li>
+                    <li><a href="#horarios" class="text-white/90 hover:text-white/70">Horários</a></li>
+                    <li><a href="#midias" class="text-white/90 hover:text-white/70">Mídias</a></li>
+                    <li><a href="#liturgia" class="text-white/90 hover:text-white/70">Liturgia</a></li>
+                    <li><a href="#ofertas" class="text-white/90 hover:text-white/70">Ofertas</a></li>
                 </ul>
             </div>
 

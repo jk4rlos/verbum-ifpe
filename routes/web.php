@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Site\MediaController;
+use App\Http\Controllers\LiturgiaController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -24,6 +24,6 @@ Route::middleware(['auth'])->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/paroquia/cristo-redentor', function () {
-    return view('site.paroquia.cristo-redentor');
-})->name('cristo');
+Route::get('/paroquia/cristo-redentor', [LiturgiaController::class, 'parishPage'])->name('cristo');
+
+Route::get('/liturgia', [LiturgiaController::class, 'index'])->name('liturgia');

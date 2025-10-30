@@ -28,15 +28,16 @@
         @include('site.components.parish.media')
     </section>
 
+    <!-- Liturgia Section -->
+    <section id="liturgia">
+        @include('site.components.parish.diary')
+    </section>
+
     <!-- Offer Section -->
     <section id="ofertas">
         @include('site.components.parish.offer')
     </section>
     
-    <!-- Contact Section -->
-    <section id="contato">
-        @include('site.components.parish.contact')
-    </section>
 @endsection
 
 @push('scripts')
