@@ -9,18 +9,24 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
-{
-    Schema::table('media', function (Blueprint $table) {
-        $table->renameColumn('tittle', 'title');
-    });
-}
+    public function up(): void
+    {
+        if (Schema::hasColumn('media', 'tittle')) {
+            Schema::table('media', function (Blueprint $table) {
+                $table->renameColumn('tittle', 'title');
+            });
+        }
+    }
 
-public function down()
-{
-    Schema::table('media', function (Blueprint $table) {
-        $table->renameColumn('title', 'tittle');
-    });
-}
-
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        if (Schema::hasColumn('media', 'title')) {
+            Schema::table('media', function (Blueprint $table) {
+                $table->renameColumn('title', 'tittle');
+            });
+        }
+    }
 };
