@@ -8,10 +8,6 @@
     "routes": [
       { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-    "builds": [
-      { "src": "api/index.php", "use": "@vercel/php" },
-      { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "public" } }
-    ],
     "env": {
       "APP_ENV": "production",
       "APP_DEBUG": "false",
@@ -26,6 +22,13 @@
       "CACHE_DRIVER": "array",
       "LOG_CHANNEL": "stderr",
       "SESSION_DRIVER": "cookie"
+    },
+    "build": {
+      "env": {},
+      "commands": {
+        "build": "npm run build"
+      },
+      "outputDirectory": "public"
     }
   }
   
