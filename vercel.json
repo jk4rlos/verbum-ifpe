@@ -6,11 +6,9 @@
       }
     },
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-      }
+      { "src": "/(.*)", "dest": "/api/index.php" }
     ],
+    "outputDirectory": "public/build",
     "env": {
       "APP_ENV": "production",
       "APP_DEBUG": "false",
