@@ -6,7 +6,10 @@
       }
     },
     "routes": [
-      { "src": "/(.*)", "dest": "/api/index.php" }
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+      }
     ],
     "env": {
       "APP_ENV": "production",
@@ -22,13 +25,6 @@
       "CACHE_DRIVER": "array",
       "LOG_CHANNEL": "stderr",
       "SESSION_DRIVER": "cookie"
-    },
-    "build": {
-      "env": {},
-      "commands": {
-        "build": "npm run build"
-      },
-      "outputDirectory": "public"
     }
   }
   
