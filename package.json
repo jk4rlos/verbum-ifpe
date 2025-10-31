@@ -2,8 +2,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "build": "vite build && mv public/build/.vite/manifest.json public/build/manifest.json"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.0.7",
