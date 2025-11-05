@@ -8,7 +8,6 @@
         </div>
 
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-24">
-            <!-- Formulário de Contato -->
             <div class="relative">
                 <div class="absolute inset-0 bg-gradient-to-br from-[#D94052]/5 via-[#EE7E4C]/5 to-[#EAD56C]/5 rounded-2xl -z-10"></div>
                 <div class="p-8 sm:p-10 lg:flex-auto">
@@ -16,7 +15,7 @@
                     <p class="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                         Preencha o formulário ao lado que entraremos em contato o mais rápido possível.
                     </p>
-                    
+
                     <form action="#" method="POST" class="mt-8 space-y-6">
                         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
                             <div>
@@ -32,7 +31,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div>
                             <label for="email" class="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">E-mail</label>
                             <div class="mt-2">

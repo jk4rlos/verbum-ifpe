@@ -1,19 +1,16 @@
 <div class="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 relative" id="solucoes">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <!-- Elementos decorativos -->
         <div class="absolute left-1/2 transform -translate-x-1/2 -mt-32 opacity-10">
             <svg class="w-96 h-96 text-[#D94052]" fill="currentColor" viewBox="0 0 200 200">
                 <path d="M100,20c44.2,0,80,35.8,80,80s-35.8,80-80,80s-80-35.8-80-80S55.8,20,100,20 M100,0C44.8,0,0,44.8,0,100s44.8,100,100,100s100-44.8,100-100S155.2,0,100,0L100,0z" />
             </svg>
         </div>
 
-        <!-- Logo central -->
         <div class="flex justify-center mb-8">
-            <img src="../../images/icon.png" alt="Logo Verbum" 
+            <img src="../../images/icon.png" alt="Logo Verbum"
                  class="h-14 w-14 md:h-16 md:w-16 object-contain drop-shadow-md opacity-0 animate-fade-in">
         </div>
 
-        <!-- Título e descrição -->
         <div class="mx-auto max-w-2xl text-center">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Soluções Completas</h2>
             <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
@@ -21,9 +18,7 @@
             </p>
         </div>
 
-        <!-- Cards -->
         <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-8">
-            <!-- Card Gestão de Pessoas -->
             <div class="group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 dark:border-gray-700 hover:border-[#D94052]/30 dark:hover:border-[#D94052]/50">
                 <div class="absolute inset-0 bg-gradient-to-br from-[#D94052]/5 to-[#EE7E4C]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
@@ -59,7 +54,6 @@
                 </div>
             </div>
 
-            <!-- Card Eventos -->
             <div class="group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 dark:border-gray-700 hover:border-[#D94052]/30 dark:hover:border-[#D94052]/50">
                 <div class="absolute inset-0 bg-gradient-to-br from-[#EE7E4C]/5 to-[#EAD56C]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
@@ -95,7 +89,6 @@
                 </div>
             </div>
 
-            <!-- Card Financeiro -->
             <div class="group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 dark:border-gray-700 hover:border-[#D94052]/30 dark:hover:border-[#D94052]/50">
                 <div class="absolute inset-0 bg-gradient-to-br from-[#94c5a5]/5 to-[#898b75]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
@@ -132,7 +125,6 @@
             </div>
         </div>
 
-        <!-- CTA -->
         <div class="mt-16 text-center">
             <a href="#contato" class="group inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-[#D94052] hover:shadow-xl hover:shadow-[#D94052]/20 hover:scale-105 transform transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D94052] focus:ring-offset-white dark:focus:ring-offset-gray-900">
                 <span class="relative">
