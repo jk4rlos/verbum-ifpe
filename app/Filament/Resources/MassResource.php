@@ -189,7 +189,7 @@ class MassResource extends Resource
             ])
             ->emptyStateHeading('Nenhum horário de missa cadastrado')
             ->emptyStateDescription('Comece cadastrando os horários de missa da sua paróquia.')
-            ->emptyStateIcon('heroicon-o-church')
+            ->emptyStateIcon('heroicon-o-calendar')
             ->emptyStateActions([
                 Tables\Actions\CreateAction::make()
                     ->label('Cadastrar primeira missa')
