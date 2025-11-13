@@ -36,25 +36,89 @@
     </nav>
 </header>
 
-<div class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md" id="mobile-menu">
-    <div class="px-4 pt-4 pb-3 space-y-2">
+<!-- Menu Mobile -->
+<div class="hidden md:hidden fixed inset-0 z-50 mt-16 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out" id="mobile-menu" style="overflow-y: auto;">
+    <div class="px-6 py-4 space-y-3">
         <a href="{{ route('welcome') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Home</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Sobre Nós</a>
         <a href="#horarios" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Horários</a>
         <a href="#midias" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Mídias</a>
         <a href="#liturgia" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Liturgia</a>
         <a href="#ofertas" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Ofertas</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Contato</a>
         <hr class="border-gray-200 dark:border-gray-700">
-        <a href="#" class="block px-3 py-2 text-base font-medium text-gray-900 dark:text-white hover:text-[#D94052]">Entrar</a>
-        <a href="#" class="block w-full px-3 py-2 text-base font-medium text-white bg-[#D94052] hover:bg-[#EE7E4C] rounded-md text-center">Começar Agora</a>
+        <a href="#" class="block w-full px-3 py-3 mt-2 text-base font-medium text-white bg-[#D94052] hover:bg-[#EE7E4C] rounded-md text-center">Entrar em contato</a>
     </div>
 </div>
+
+<!-- Overlay para fechar o menu ao clicar fora -->
+<div id="menu-overlay" class="hidden fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-300"></div>
+
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    function initMobileMenu() {
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    });
+        if (menuToggle && mobileMenu && menuOverlay) {
+            function toggleMenu() {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuOverlay.classList.add('hidden');
+                    document.body.style.overflow = '';
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuOverlay.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            menuToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+            menuOverlay.addEventListener('click', () => {
+                toggleMenu();
+            });
+
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (link.getAttribute('href').startsWith('#')) {
+                        const targetId = link.getAttribute('href');
+                        if (targetId !== '#') {
+                            e.preventDefault();
+                            const targetElement = document.querySelector(targetId);
+                            if (targetElement) {
+                                targetElement.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }
+                    }
+                    setTimeout(() => {
+                        toggleMenu();
+                    }, 300);
+                });
+            });
+
+            function handleResize() {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                    menuOverlay.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            window.addEventListener('resize', handleResize);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileMenu);
+    } else {
+        initMobileMenu();
+    }
 </script>

@@ -28,7 +28,6 @@
             @endif
 
             <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/50 overflow-hidden hover:shadow-3xl transition-all duration-500 p-8">
-                <!-- Cabeçalho com data e cor litúrgica -->
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 pb-6 border-b border-gray-200/50 dark:border-gray-700/50">
                     <div class="mb-4 md:mb-0">
                         <div class="flex items-center">
@@ -124,7 +123,6 @@
                 @endif
             </div>
 
-            <!-- Rodapé com informações adicionais -->
             <div class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
                 <p>Leituras do Dia - {{ $liturgiaData['data'] ?? date('d/m/Y') }} | Cor Litúrgica: {{ $liturgiaData['cor'] ?? 'Verde' }}</p>
                 <p class="mt-1">Fonte: CNBB - Conferência Nacional dos Bispos do Brasil</p>

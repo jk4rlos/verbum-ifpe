@@ -90,35 +90,35 @@
             </div>
 
             <div class="group relative overflow-hidden rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 dark:border-gray-700 hover:border-[#D94052]/30 dark:hover:border-[#D94052]/50">
-                <div class="absolute inset-0 bg-gradient-to-br from-[#94c5a5]/5 to-[#898b75]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-[#5D69BE]/5 to-[#89CFF0]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div class="relative z-10">
-                    <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#94c5a5] to-[#898b75] text-white shadow-lg shadow-[#94c5a5]/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#5D69BE] to-[#89CFF0] text-white shadow-lg shadow-[#5D69BE]/20 mb-6 group-hover:scale-110 transition-transform duration-300">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Gestão Financeira</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Liturgia Diária</h3>
                     <p class="mt-4 text-gray-600 dark:text-gray-300">
-                        Controle completo das finanças com relatórios detalhados e personalizados.
+                        Acompanhe as leituras e celebrações do dia de forma organizada e acessível.
                     </p>
                     <ul class="mt-6 space-y-3">
                         <li class="flex items-center text-gray-600 dark:text-gray-300">
                             <svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            Contas a pagar e receber
+                            Leituras do dia
                         </li>
                         <li class="flex items-center text-gray-600 dark:text-gray-300">
                             <svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            Dízimos e ofertas
+                            Calendário litúrgico
                         </li>
                         <li class="flex items-center text-gray-600 dark:text-gray-300">
                             <svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            Relatórios fiscais
+                            Santos do dia
                         </li>
                     </ul>
                 </div>

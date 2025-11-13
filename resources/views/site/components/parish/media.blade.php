@@ -21,12 +21,10 @@
                 $medias = \App\Models\Media::orderBy('created_at', 'desc')->limit(6)->get();
             @endphp
 
-            <!-- Media Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 @forelse($medias as $media)
                     @switch($media->type)
                         @case('video_youtube')
-                            <!-- YouTube Video Card -->
                             <div class="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/50 overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
                                 <div class="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
                                     @if($media->link_url)
@@ -69,16 +67,13 @@
                             @break
 
                         @case('audio_spotify')
-                            <!-- Spotify Podcast Card -->
                             <div class="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/50 overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
                                 <div class="relative aspect-video flex items-center justify-center">
-                                    <!-- Player do Spotify no cabeçalho se houver link -->
                                     @if($media->link_url)
                                         <div class="absolute inset-0 flex items-center justify-center">
                                             {!! convertToSpotifyEmbed($media->link_url) !!}
                                         </div>
                                     @else
-                                        <!-- Ícone padrão se não houver link -->
                                         <div class="relative z-10">
                                             <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white shadow-2xl">
                                                 <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -113,7 +108,6 @@
                             @break
 
                         @case('audio_file')
-                            <!-- Audio File Card -->
                             <div class="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/50 overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
                                 <div class="relative aspect-video bg-gradient-to-br from-purple-100 via-indigo-50 to-blue-100 dark:from-purple-900/30 dark:via-indigo-900/20 dark:to-blue-900/30 flex items-center justify-center">
                                     <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-indigo-500/10 dark:from-purple-400/10 dark:to-indigo-400/10"></div>
@@ -167,7 +161,6 @@
                             @break
 
                         @case('image')
-                            <!-- Image Card -->
                             <div class="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/50 overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
                                 <div class="relative aspect-[4/3]">
                                     @php
@@ -258,7 +251,6 @@
                                     @if($fileUrls && $totalImages > 0)
                                         <div class="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-gray-700">
                                             @if($isMultiple)
-                                                <!-- Botão para galeria completa -->
                                                 <a href="?#"
                                                    class="group/btn inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                                                     <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -295,7 +287,6 @@
                             @break
 
                         @default
-                            <!-- Default Card for Unknown Types -->
                             <div class="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/50 overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
                                 <div class="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
                                     <div class="text-center text-gray-500">
@@ -318,7 +309,6 @@
                             </div>
                     @endswitch
                 @empty
-                    <!-- Empty State -->
                     <div class="col-span-full text-center py-16">
                         <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-gray-100 dark:bg-gray-800 mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
