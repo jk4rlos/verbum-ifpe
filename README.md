@@ -22,7 +22,6 @@ O **Verbum** é um sistema web desenvolvido para agentes de pastoral, secretári
 
 ## Funcionalidades
 
-- [ ] Adicione aqui as funcionalidades do seu sistema (exemplo):
   - Cadastro e login de usuários
   - Gestão de conteúdos (Fotos, vídeos, avisos, podcast e etc.) 
   - Painel administrativo
